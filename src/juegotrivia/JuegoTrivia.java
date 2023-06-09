@@ -31,44 +31,57 @@ public class JuegoTrivia extends JFrame implements ActionListener {
     private JButton btnSalir; // Botón de salida
 
     public JuegoTrivia() {
-        setTitle("Juego de Trivia");
-        setSize(400, 200);
+        setTitle("Juego de TRIVIANAUTAS");
+        setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        JPanel panelInicial = new JPanel(new BorderLayout());
 
-        JPanel panel = new JPanel(new FlowLayout());
-
+        JLabel lblTitulo = new JLabel("Bienvenido al Juego de TRIVIANAUTAS");
+        panelInicial.add(lblTitulo, BorderLayout.NORTH);
+        
+        
+        JPanel panelNombres = new JPanel(new FlowLayout());
+                
         JLabel lblNombreJugador1 = new JLabel("Nombre del jugador 1:");
-        panel.add(lblNombreJugador1);
+        panelNombres.add(lblNombreJugador1);
 
         txtNombreJugador1 = new JTextField(15);
-        panel.add(txtNombreJugador1);
+        panelNombres.add(txtNombreJugador1);
 
         JLabel lblNombreJugador2 = new JLabel("Nombre del jugador 2:");
-        panel.add(lblNombreJugador2);
+        panelNombres.add(lblNombreJugador2);
 
         txtNombreJugador2 = new JTextField(15);
-        panel.add(txtNombreJugador2);
+        panelNombres.add(txtNombreJugador2);
 
         JLabel lblSeleccion = new JLabel("Selecciona un tema:");
-        panel.add(lblSeleccion);
+        panelNombres.add(lblSeleccion);
 
         comboTemas = new JComboBox<>();
         comboTemas.addItem("Deportes");
         comboTemas.addItem("Cine");
         comboTemas.addItem("Historia");
-        panel.add(comboTemas);
+        panelNombres.add(comboTemas);
 
+        panelInicial.add(panelNombres, BorderLayout.CENTER);
+        
+        JPanel panelBotones = new JPanel(new FlowLayout());
+        
         btnIniciar = new JButton("Iniciar Juego");
         btnIniciar.addActionListener(this);
-        panel.add(btnIniciar);
-
-        add(panel);
-        setVisible(true);
-        
+        panelBotones.add(btnIniciar);
+                
         btnSalir = new JButton("Salir del Juego"); // Botón de salida
         btnSalir.addActionListener(this); // Agregar el ActionListener
-        panel.add(btnSalir); // Agregar el botón de salida al panel
-
+        panelBotones.add(btnSalir); // Agregar el botón de salida al panel
+        
+        panelInicial.add(panelBotones, BorderLayout.SOUTH);
+        
+        add(panelInicial);
+        setVisible(true);
+        
+        
     }
 
     @Override
