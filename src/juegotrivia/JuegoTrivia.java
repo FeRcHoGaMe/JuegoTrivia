@@ -2,7 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
     
-Autor Luis Fernando Forero Beltran
+Autores
+Calderón Contreras Jessica Lorena 
+Scrum Master 
+Jlcalderon@poligran.edu.co 
+Ruiz Méndez Sergio Manuel    
+Product Owner 
+smruiz@poligran.edu.co 
+Forero Beltrán Luis Fernando 
+Analista 
+Lfeforero@poligran.edu.co 
+Carreño Prieto Jhonatan Arturo   
+Administrador BD 
+jarcarreno@poligran.edu.co   
+
 */
 
 package juegotrivia;
