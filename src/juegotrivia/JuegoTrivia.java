@@ -28,7 +28,7 @@ public class JuegoTrivia extends JFrame implements ActionListener {
     private String jugador2;
     private int puntajeJugador1;
     private int puntajeJugador2;
-    private JButton btnSalir; // Botón de salida
+    private JButton btnSalir;
 
     public JuegoTrivia() {
         setTitle("Juego de TRIVIANAUTAS");
